@@ -1,23 +1,130 @@
 body{
     background-image:url(background.jpg);
     color:white;
+    display: flex;
+    flex-direction: column;   /* alt alta */
+    justify-content: flex-start; /* yukarıdan aşağı */
+    align-items: center;      /* yatay ortala */
+    min-height: 100vh;
+    text-align: center;
+}
+
+.welcome{
+    width:60%;
+    background-color: #1d0e6f;
+
+}
+.horoscope{
+    width:60%;
+    background-color:#150826 ;
+}
+.suggestions{
+    width:60%;
+    background-color: #021965;
+}
+.fortunetelling{
+    width:60%;
+    background-color: #4b0265;
 }
 
 button{
     color:white;
     font-family:"Emilys Candy",Arial, Helvetica, sans-serif;
     font-size:1.5em;
-    background: linear-gradient(#7000ceff,#ded7d700,#de000000);
+    background: linear-gradient(rgb(239, 234, 234),rgb(59, 13, 92),rgb(0, 0, 0));
+    padding: 12px;
+    margin:20px auto; /* ortalama */
+    border-radius: 7px;
+    display: block;
+    width: 250px;  /* sabit genişlik */
+    text-align: center;
+    border: medium solid #0f051f;
+    box-shadow: inset 0 0 8px rgba(0,0,0,0.7); /* daha hoş iç gölge */
+    transition: 0.3s ease; /* hover animasyonu */
 }
 
-h1{
-    font-family: "Henny Penny";
-    font-size:2.4em;
+button:hover{
+    background: linear-gradient(rgb(0, 0, 0),rgb(59, 13, 92),rgb(239, 234, 234));
+    cursor: pointer;
+    box-shadow: 0 0 15px rgba(239,234,234,0.8); /* hoverda dış parıltı */
 }
 
-label,input{
+h1,h2{
+    text-shadow: 4px 3px 7px #281781;
+}
+
+h1, h2, label, .output {
+    width: 100%;
+    text-align: center;
+    font-family: "Emilys Candy", Arial,Arial, Helvetica, sans-serif;
+}
+
+label,input,p,li{
     font-family:"Emilys Candy",Arial, Helvetica, sans-serif;
     font-size: 1.2em;
-
+    padding:7px;
+    margin: 20px auto;
+    display:block; /* yan yana değil alt alta */
+    text-align: center;
 }
 
+.output{
+    font-family: "Emilys Candy", Arial, Helvetica, sans-serif;
+    font-size:1.5em;
+    padding:40px;
+    display:block;
+    text-align: center;
+    width: 80%;
+    max-width: 600px; /* sabitle */
+    margin: 0 auto;
+}
+
+img{
+    border-radius: 7px;
+    border:ridge;
+    border-color: #8d6b0dff;
+    border-width: thick;
+    display:block;
+    max-width: 300px; /* çok büyük olmasın */
+    margin: 20px auto; /* ortala */
+}
+/* Mobil uyumlu için */
+@media only screen and (max-width: 600px) {
+
+    body {
+        padding: 10px;
+    }
+
+    button {
+        width: 80%;      /* ekranın %80’i kadar genişlik */
+        font-size: 1.2em; /* biraz daha küçük yazı */
+        padding: 10px;
+        margin: 15px auto;
+    }
+
+    input, label {
+        width: 90%;
+        font-size: 1em;
+        margin: 10px auto;
+    }
+
+    img {
+        max-width: 90%;  /* ekranın %90’ı kadar */
+        height: auto;
+        margin: 15px auto;
+    }
+
+    .output {
+        width: 95%;      /* ekranın %95’i kadar */
+        font-size: 1.2em;
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 1.8em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+}

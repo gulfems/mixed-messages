@@ -12,6 +12,7 @@
 <body>
     <h1>AstroEngine: Daily Horoscope</h1>
     <div class="welcome">
+        <h2>Welcome</h2>
         <p>Discover your zodiac sign’s daily horoscope and character insights—straightforward,
             sharp, and sarcastic. Enter your birth date and see what the stars really have
             to say. No sugarcoating, no clichés, just a reality check delivered with attitude.</p>
@@ -31,9 +32,9 @@
             <input type="number" id="day" name="day" min="1" max="31" placeholder="DD">
             <label for="month">Month:</label>
             <input type="number" id="month" name="month" min="1" max="12" placeholder="MM">
-            <img src="yougonnabefine.jpg" width=300px>
-            <button id="getHoroscope">Get Horoscope</button>
-            <div id="horoscopeOutput" class="output">here: </div>
+            <img src="message.jpg" width=500px>
+            <button id="getHoroscope">Get Daily Horoscope</button>
+            <div id="horoscopeOutput" class="output"></div>
         </div>
     </div>
     <div class="suggestions">
@@ -42,12 +43,14 @@
         <input type="number" id="day1" name="day" min="1" max="31" placeholder="DD">
         <label for="month">Month:</label>
         <input type="number" id="month1" name="month" min="1" max="12" placeholder="MM">
+        <img src="astrology.jpg" width=500px>
         <button id="getSuggestion">Get life tips</button>
         <div id="suggestionOutput" class="output"></div>
     </div>
     <div class="fortunetelling">
     <h2>Personal Fortune Telling</h2>
-        <button id="getReading">Get your free reading!</button>
+        <img src="tarot.jpg" width=500px>
+        <button id="getReading">Get your free reading</button>
         <div id=readingOutput class="output"></div>
     </div>
     <script src="script.js"></script>
