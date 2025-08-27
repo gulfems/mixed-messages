@@ -1,0 +1,23 @@
+body{
+    background-image:url(background.jpg);
+    color:white;
+}
+
+button{
+    color:white;
+    font-family:"Emilys Candy",Arial, Helvetica, sans-serif;
+    font-size:1.5em;
+    background: linear-gradient(#7000ceff,#ded7d700,#de000000);
+}
+
+h1{
+    font-family: "Henny Penny";
+    font-size:2.4em;
+}
+
+label,input{
+    font-family:"Emilys Candy",Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+
+}
+
