@@ -5,3 +5,6 @@ Mixed Messages is my first Portfolio Project for Codecademy Full-Stack Engineeri
 It is a mock-up astrology app that turns random readings to users.
 
 Gülfem
+
+I just want to see whether this works.
+
