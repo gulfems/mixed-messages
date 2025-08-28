@@ -62,7 +62,6 @@ h1, h2, label, .output {
 label,input,p,li{
     font-family:"Emilys Candy",Arial, Helvetica, sans-serif;
     font-size: 1.2em;
-    padding:7px;
     margin: 20px auto;
     display:block; /* yan yana değil alt alta */
     text-align: center;
