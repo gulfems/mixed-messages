@@ -47,7 +47,7 @@ console.log(signs);
 
 signFinder = (birthDay,birthMonth) => {
     if(birthMonth == 1){
-        if(birthDay < 15){
+        if(birthDay < 19){
             return "Capricorn";
         } else{
             return "Aquarius";
@@ -185,7 +185,7 @@ const dailyHoroscopeMessages = [
 
 randomDailyMessage = (yourSign) => {
     let randomNum = Math.floor(Math.random()*dailyHoroscopeMessages.length);
-    return "Dear "+ yourSign+", "+ dailyHoroscopeMessages[randomNum].toLowerCase();
+    return "Dear "+ yourSign+",w "+ dailyHoroscopeMessages[randomNum].toLowerCase();
 };
 
 getDailyHoroscope = (birthDay, birthMonth) => {
